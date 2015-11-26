@@ -8,24 +8,31 @@ namespace core.ventures
         // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+            bundles.Add(new StyleBundle("~/css/baseline").Include(
+                      "~/content/css/skel.css",
+                      "~/content/css/style.css",
+                      "~/content/css/style-large.css",
+                      "~/content/css/venobox.css"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.validate*"));
+            bundles.Add(new ScriptBundle("~/js/baseline").Include(
+                      "~/content/js/jquery.min.js",
+                      "~/content/js/jquery.scrollex.min.js",
+                      "~/content/js/jquery.scrolly.min.js",
+                      "~/content/js/skel.min.js",
+                      "~/content/js/init.js",
+                      "~/content/js/default.js",
+                      "~/content/js/venobox.min.js"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            bundles.Add(new StyleBundle("~/css/fancybox").Include(
+                      "~/content/css/jquery.fancybox.css?v=2.1.5",
+                      "~/content/css/jquery.fancybox-buttons.css?v=1.0.5",
+                      "~/content/css/jquery.fancybox-thumbs.css?v=1.0.7"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
-
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+            bundles.Add(new ScriptBundle("~/js/fancybox").Include(
+                      "~/content/js/jquery.fancybox.pack.js?v=2.1.5",
+                      "~/content/js/jquery.fancybox-buttons.js?v=1.0.5",
+                      "~/content/js/jquery.fancybox-media.js?v=1.0.6",
+                      "~/content/js/jquery.fancybox-thumbs.js?v=1.0.7"));
         }
     }
 }
