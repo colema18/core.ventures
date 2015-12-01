@@ -112,7 +112,7 @@
 
 	#header {
 		-ms-behavior: url("css/ie/backgroundsize.min.htc");
-		background-image: url("/Content/images/Gallery/chicagoSkyline.jpg");
+		background-image: url("../../images/bg.jpg");
 		background-size: cover;
 		height: 100%;
 	}
@@ -135,7 +135,7 @@
 
 	#footer {
 		-ms-behavior: url("css/ie/backgroundsize.min.htc");
-		background-image: url("/Content/images/Gallery/chicagoSkyline.jpg");
+		background-image: url("../../images/bg.jpg");
 		background-size: cover;
 	}
 

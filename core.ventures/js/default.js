@@ -61,13 +61,13 @@ $(document).ready(function () {
                     'from_email': $('#email').val(),
                     'to': [
                         {
-                          'email': 'colema18@gmail.com',
+                          'email': 'james@core.ventures',
                           'name': 'James Coleman',
                           'type': 'to'
                   }
             ],
           'autotext': 'true',
-          'subject': 'Coleman.Dance Inquiry',
+          'subject': 'Core.Ventures Inquiry',
           'html': 'Name: ' + $('#name').val() + '<br/>Message: ' + $('#message').val()
           }
             }

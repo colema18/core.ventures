@@ -5,62 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     <meta name="description" content="" />
-    <meta name="keywords" content="" />
-
-    @Styles.Render("~/css/baseline")
-    @Styles.Render("~/css/fancybox")
+    <meta name="keywords" content=""/>
     
+    <link rel="stylesheet" href="/css/skel.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-large.css"/>
+    <link rel="stylesheet" href="/css/venobox.css" type="text/css" media="screen" />
+
+    <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/init.js"></script>
+    <script src="/js/default.js"></script>
+    <script src="/js/venobox.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="/css/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/js/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="/js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
 </head>
 <body>
     <!-- Header -->
     <section id="header">
         <header class="major">
             <h1>Core.Ventures</h1>
-            <p>independent technology professionals</p>
+            <p>Independent Sitecore Professionals</p>
         </header>
         <div class="container">
             <ul class="actions">
                 <li><a href="#one" class="button special scrolly">Company</a></li>
-                <li><a href="#two" class="button special scrolly">Developer</a></li>
+                <li><a href="#three" class="button special scrolly">Developer</a></li>
             </ul>
         </div>
     </section>
     @RenderBody()
 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="container">
-            <header class="major">
-                <h2>Contact Kate</h2>
-            </header>
-            <form method="post" action="#">
-                <div class="row uniform">
-                    <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                    <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                    <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                    <div class="12u$">
-                        <ul class="actions">
-                            <li><input type="submit" value="Send Message" class="special" id="sendEmail" /></li>
-                        </ul>
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <header class="major">
+                    <h2>Inquiries</h2>
+                </header>
+                <form method="post" action="#">
+                    <div class="row uniform">
+                        <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                        <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                        <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                        <div class="12u$">
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" class="special" id="sendEmail" /></li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </form>
-        </div>
-        <footer>
-            <ul class="icons">
-                <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="mailto:james@core.ventures" target="_blank" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
-            <ul class="copyright">
-                <li>&copy; core.ventures | photo cred: <a href="http://www.wallpaperup.com/" target="_blank">wallpaperup</a></li>
-            </ul>
-        </footer>
-    </section>
+                </form>
+            </div>
+            <footer>
+                <ul class="icons">
+                    <li><a href="#" target="_blank" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" target="_blank" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" target="_blank" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="mailto:james@core.ventures" target="_blank" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; core.ventures | photo cred: <a href="http://www.wallpaperup.com/" target="_blank">wallpaperup</a></li>
+                </ul>
+            </footer>
+        </section>
 
-    @Scripts.Render("~/js/baseline")
-    @Scripts.Render("~/js/fancybox")
     @RenderSection("scripts", required: false)
 </body>
 </html>
